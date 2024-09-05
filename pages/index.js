@@ -8,7 +8,7 @@ function Home() {
         height: "100vh",
       }}
     >
-      <h1>Thaís, vamos sair para jantar hoje?</h1>
+      <h1>Felipe, Lucas e Fábio, o primeiro passo já foi dado!</h1>
     </div>
   );
 }
