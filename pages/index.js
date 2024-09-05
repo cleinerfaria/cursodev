@@ -31,7 +31,7 @@ function Home() {
           letterSpacing: "2px", // Espaçamento entre letras para um efeito mais "futurista"
         }}
       >
-        Vamos dominar o mundo!!!
+        Em breve uma plataforma transformadora!!!
       </span>
     </div>
   );
