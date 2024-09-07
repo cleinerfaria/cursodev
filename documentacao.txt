@@ -1,0 +1,18 @@
+
+- Lembretes de códigos
+  - para obter a data e hora atual em Unix
+    Date.now()
+  - para obter a data e hora em iso 8601
+    new Date().toISOString()
+
+07/09/2024
+
+- intalado o node-pg-migrate@6.2.2 e o dotenv@16.4.4
+- configurado os scripts de execução
+    - "migration:create": "node-pg-migrate --migrations-dir infra/migrations create",
+    - "migration:up": "node-pg-migrate --migrations-dir infra/migrations --envPath .env.development up"
+      SÃO O MESMO QUE:
+    - "migration:create": "node-pg-migrate -m infra/migrations create",
+    - "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up"
+
+

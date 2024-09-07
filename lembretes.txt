@@ -1,7 +1,0 @@
-para obter a data e hora atual em Unix
-
-Date.now()
-
-para obter a data e hora em iso 8601
-
-new Date().toISOString()
