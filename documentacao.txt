@@ -15,4 +15,9 @@
     - "migration:create": "node-pg-migrate -m infra/migrations create",
     - "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up"
 
+08/09/2024
+
+- Ajustado as variáveis de ambiente para aproveitar as variáveis em outro local. 
+- Para isso foi instalado o dotenv-expand@11.0.6
+
 
