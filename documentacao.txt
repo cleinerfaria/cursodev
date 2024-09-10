@@ -22,6 +22,6 @@
 
 10/09/2024
 
-- criado o arquivo tests.yaml
+- criado o arquivo tests.yaml e realizado commit
 
 
