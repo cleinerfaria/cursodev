@@ -18,6 +18,10 @@
 08/09/2024
 
 - Ajustado as variáveis de ambiente para aproveitar as variáveis em outro local. 
-- Para isso foi instalado o dotenv-expand@11.0.6
+- Para isso foi instalado o dotenv-expand@11.0.6 
+
+10/09/2024
+
+- criado o arquivo tests.yaml
 
 
