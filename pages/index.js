@@ -10,6 +10,7 @@ export default function Home() {
         Em breve um sistema que irá mudar a forma que a sua empresa consome
         dados!!!
       </span>
+      
     </div>
   );
 }
