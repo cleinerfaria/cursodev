@@ -1,75 +1,85 @@
-import { Tab, TabGroup, TabList, TabPanel, TabPanels, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import {
+  Tab,
+  TabGroup,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/react";
 import {
   ArchiveBoxXMarkIcon,
   ChevronDownIcon,
   PencilIcon,
   Square2StackIcon,
   TrashIcon,
-} from '@heroicons/react/24/solid'
+} from "@heroicons/react/24/solid";
 
 const categories = [
   {
-    name: 'Recent',
+    name: "Recent",
     posts: [
       {
         id: 1,
-        title: 'Does drinking coffee make you smarter?',
-        date: '5h ago',
+        title: "Does drinking coffee make you smarter?",
+        date: "5h ago",
         commentCount: 5,
         shareCount: 2,
       },
       {
         id: 2,
         title: "So you've bought coffee... now what?",
-        date: '2h ago',
+        date: "2h ago",
         commentCount: 3,
         shareCount: 2,
       },
     ],
   },
   {
-    name: 'Popular',
+    name: "Popular",
     posts: [
       {
         id: 1,
-        title: 'Is tech making coffee better or worse?',
-        date: 'Jan 7',
+        title: "Is tech making coffee better or worse?",
+        date: "Jan 7",
         commentCount: 29,
         shareCount: 16,
       },
       {
         id: 2,
-        title: 'The most innovative things happening in coffee',
-        date: 'Mar 19',
+        title: "The most innovative things happening in coffee",
+        date: "Mar 19",
         commentCount: 24,
         shareCount: 12,
       },
     ],
   },
   {
-    name: 'Trending',
+    name: "Trending",
     posts: [
       {
         id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        date: '2d ago',
+        title: "Ask Me Anything: 10 answers to your questions about coffee",
+        date: "2d ago",
         commentCount: 9,
         shareCount: 5,
       },
       {
         id: 2,
         title: "The worst advice we've ever heard about coffee",
-        date: '4d ago',
+        date: "4d ago",
         commentCount: 1,
         shareCount: 2,
       },
     ],
   },
-]
+];
 
 export default function Example() {
   return (
-    <div className='grid'>
+    <div className="grid">
       <div className="flex w-full justify-center pt-24 px-4 !bg-black">
         <div className="w-full max-w-md">
           <TabGroup>
@@ -88,12 +98,18 @@ export default function Example() {
                 <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
                   <ul>
                     {posts.map((post) => (
-                      <li key={post.id} className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5">
+                      <li
+                        key={post.id}
+                        className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5"
+                      >
                         <a href="#" className="font-semibold text-white">
                           <span className="absolute inset-0" />
                           {post.title}
                         </a>
-                        <ul className="flex gap-2 text-white/50" aria-hidden="true">
+                        <ul
+                          className="flex gap-2 text-white/50"
+                          aria-hidden="true"
+                        >
                           <li>{post.date}</li>
                           <li aria-hidden="true">&middot;</li>
                           <li>{post.commentCount} comments</li>
@@ -126,14 +142,18 @@ export default function Example() {
                 <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
                   <PencilIcon className="size-4 fill-white/30" />
                   Edit
-                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘E</kbd>
+                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">
+                    ⌘E
+                  </kbd>
                 </button>
               </MenuItem>
               <MenuItem>
                 <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
                   <Square2StackIcon className="size-4 fill-white/30" />
                   Duplicate
-                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
+                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">
+                    ⌘D
+                  </kbd>
                 </button>
               </MenuItem>
               <div className="my-1 h-px bg-white/5" />
@@ -141,14 +161,18 @@ export default function Example() {
                 <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
                   <ArchiveBoxXMarkIcon className="size-4 fill-white/30" />
                   Archive
-                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘A</kbd>
+                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">
+                    ⌘A
+                  </kbd>
                 </button>
               </MenuItem>
               <MenuItem>
                 <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
                   <TrashIcon className="size-4 fill-white/30" />
                   Delete
-                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
+                  <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">
+                    ⌘D
+                  </kbd>
                 </button>
               </MenuItem>
             </MenuItems>
@@ -156,5 +180,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }
