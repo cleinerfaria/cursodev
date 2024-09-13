@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Home() {
   return (
     <div
@@ -12,7 +14,7 @@ function Home() {
         padding: "0",
       }}
     >
-      <img
+      <Image
         src="/assets/images/logo/logo_white.png"
         alt="Logomarca Cleiner Faria"
         style={{
